@@ -28,4 +28,7 @@ public class Event extends BookingSystem {
         return (getVacantSeatsInPercent(capacity, numberOfGuests) == 1) ? 0.25 * ticketPrice * numberOfGuests :
                 (getVacantSeatsInPercent(capacity, numberOfGuests) > 0.50)?0.10 * ticketPrice * numberOfGuests:0;
     }
+    public double getEventRevenue(double eventPrice){
+        return ticketPrice*numberOfGuests - eventPrice;
+    }
 }

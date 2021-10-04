@@ -2,11 +2,13 @@ public class Main {
     public static void main(String[] args) {
         Guests peter = new Guests("peter@gmail.com","peterpeter","123peter");
         ConcertAdmin lone = new ConcertAdmin("lone@roskildefestivals.dk","LoneR","lone123");
-        Band javaMusic = new Band("javaMusic",1000,true);
-        Event smukFest = new Event(22,5000,100,100,200,"henriette@hotmail.com","henriette","skanderborgvej 1",22,"skanderborg",10000);
+        Band javaMusic = new Band("javaMusic",100000,true);
+        Event smukFest = new Event(22,10000,100,100,200,"henriette@hotmail.com","henriette","skanderborgvej 1",22,"skanderborg",10000);
         Double smukFestPris = lone.getPrice(javaMusic.startPrice, smukFest.getBandBonus(smukFest.numberOfGuests, smukFest.ticketPrice));
         System.out.println(smukFestPris);
         Double bandSmukfestBonus = smukFest.getBandBonus(smukFest.numberOfGuests, smukFest.ticketPrice);
         System.out.println(bandSmukfestBonus);
+        System.out.println(smukFest.getEventRevenue(smukFestPris));
+
     }
 }
