@@ -8,4 +8,8 @@ public class Band {
         this.startPrice = startPrice;
         this.isContract = isContract;
     }
+
+    public int getStartPrice(){
+        return startPrice;
+    }
 }
