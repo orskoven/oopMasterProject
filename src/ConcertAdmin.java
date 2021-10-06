@@ -28,4 +28,9 @@ public class ConcertAdmin extends User{
         return reversed.toLowerCase(Locale.ROOT);
 
     }
+
+    @Override
+    public String getUserName() {
+        return super.getUserName();
+    }
 }
