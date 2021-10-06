@@ -10,10 +10,10 @@ public class Main {
 
         //Create admin object
         System.out.println("Please choose your username: ");
-        String concertAdminUserName = "LoneR";                              //scanner.next();
+        String concertAdminUserName = scanner.next();
 
         System.out.println("Please choose your password: ");
-        String concertAdminPassword = "lone123";                            //scanner.next();
+        String concertAdminPassword = scanner.next();
 
         ConcertAdmin concertAdmin = new ConcertAdmin(concertAdminUserName,concertAdminPassword);
 
@@ -22,23 +22,9 @@ public class Main {
         System.out.println("Your admin email: " + concertAdmin.createEmail());
 
         //Create
-        Simon.bandCreatorInterface();
-
-        Event event = null;
-        //event = new Event(event.chooseEvent());
-
-
-
-
-
-        //Guests peter = new Guests("peterpeter","123peter");
-        //ConcertAdmin lone = new ConcertAdmin("LoneR","lone123");
+        Event.bandCreatorInterface();
 
         /*
-        Band javaMusic = new Band("javaMusic", 4,100000,true);
-        Event smukFest = new Event(22,10000,100,100,200,"henriette@hotmail.com","henriette","skanderborgvej 1",22,"skanderborg",10000);
-        Double smukFestPris = concertAdmin.getPrice(javaMusic.getStartPrice(), smukFest.getBandBonus(smukFest.getNumberOfGuests(), smukFest.getTicketPrice()));
-        System.out.println(smukFestPris);
         Double bandSmukfestBonus = smukFest.getBandBonus(smukFest.getNumberOfGuests(), smukFest.getTicketPrice());
         System.out.println(bandSmukfestBonus);
         System.out.println(smukFest.getEventRevenue(smukFestPris));

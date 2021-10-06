@@ -15,4 +15,13 @@ public class BookingSystem {
     public double getTicketPrice(){
         return ticketPrice;
     }
+
+    @Override
+    public String toString() {
+        return "BookingSystem{" +
+                "time=" + time +
+                ", numberOfGuests=" + numberOfGuests +
+                ", ticketPrice=" + ticketPrice +
+                '}';
+    }
 }
