@@ -2,8 +2,8 @@ import java.util.Locale;
 import java.util.Random;
 
 public class ConcertAdmin extends User{
-    public ConcertAdmin(String email, String userName, String password) {
-        super(email, userName, password);
+    public ConcertAdmin(String userName, String password) {
+        super( userName, password);
     }
 
     public double getPrice(double bandStartPrice, double eventPrice){
