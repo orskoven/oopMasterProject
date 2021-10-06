@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Guests peter = new Guests("peterpeter","123peter");
+        Guests peter = new Guests("peterpeter", "123peter", 2, "peter@gmail.com");
         ConcertAdmin lone = new ConcertAdmin("LoneR","lone123");
         Band javaMusic = new Band("javaMusic", 4,100000,true);
         Event smukFest = new Event(22,10000,100,100,200,"henriette@hotmail.com","henriette","skanderborgvej 1",22,"skanderborg",10000);
