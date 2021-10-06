@@ -34,7 +34,7 @@ public class Simon {
             System.out.println("What is the bands start price?");
             int bandStartPrice = scanner.nextInt();
             System.out.println("Is the band contract approved?Y/N");
-            //System.out.println(scanner.nextLine());
+            System.out.println(scanner.nextLine());
             String isContractApproved = scanner.nextLine();
             Band newBand = new Band(bandName, bandMembers, bandStartPrice, isContractApproved(isContractApproved), getRandomNumber(0, 100000));
             bandArray[i] = newBand;
