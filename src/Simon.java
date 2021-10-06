@@ -9,8 +9,11 @@ public class Simon {
     public static void main(String[] args) {
         }
         public static boolean isContractApproved(String inputAnswerToContract) {
-        return inputAnswerToContract.toLowerCase(Locale.ROOT) == "Y";
-
+            return inputAnswerToContract.toLowerCase(Locale.ROOT) == "Y";
+        }
+            public static int getRandomNumber(int min, int max) {
+                Random random = new Random();
+                return random.nextInt(max - min) + max;
 
         }
         public static void bandCreatorInterface(){
@@ -28,13 +31,8 @@ public class Simon {
                 System.out.println("Is the band contract approved?Y/N");
                 System.out.println(scanner.nextLine());
                 String isContractApproved = scanner.nextLine();
-                Band newBand = new Band(bandName, bandMembers, bandStartPrice, isContractApproved(isContractApproved));
+                Band newBand = new Band(bandName, bandMembers, bandStartPrice, isContractApproved(isContractApproved),getRandomNumber(0,100000));
             }
         }
-    public int getRandomNumber(int min, int max) {
-        Random random = new Random();
-        return random.nextInt(max - min) + max;
-    }
 
-    }
 
