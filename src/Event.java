@@ -57,28 +57,33 @@ public class Event extends BookingSystem {
         System.out.println("How many bands do you need to create?");
         int numberOfBands = scanner.nextInt();
         int[] bandIdArrays = new int[numberOfBands];
+        String[] bandNameArrays = new String[numberOfBands];
         for (int i = 0; i < numberOfBands; i++) {
             System.out.println("Let's add a band!\nWhat's the band name");
-            System.out.println(scanner.nextLine());
-            String bandName = scanner.nextLine();
+            String bandName = scanner.next();
             System.out.println("How many members are there in the band?");
             int bandMembers = scanner.nextInt();
             System.out.println("What is the bands start price?");
             int bandStartPrice = scanner.nextInt();
-            System.out.println("Is the band contract approved?Y/N");
-            System.out.println(scanner.nextLine());
-            String isContractApproved = scanner.nextLine();
+            System.out.println("Is the band contract approved?1/0");
+            int isContractApproved = scanner.nextInt();
             int bandIdNumber  = getRandomNumber(0,100000);
             Band newBand = new Band(bandName, bandMembers, bandStartPrice, isContractApproved(isContractApproved), bandIdNumber);
             bandIdArrays[i] = bandIdNumber;
             Event.bandId = bandIdArrays;
+            bandNameArrays[i] = bandName;
         }
         System.out.println();
         Event.chooseEvent((bandId));
+        for (String bandNames:bandNameArrays) {
+            System.out.println("Band: " + bandNames);
 
-    }
-    public static boolean isContractApproved(String inputAnswerToContract) {
-        return inputAnswerToContract.toUpperCase(Locale.ROOT).equals("Y");
+        }
+
+        }
+
+    public static boolean isContractApproved(int inputAnswerToContract) {
+        return inputAnswerToContract == 1;
     }
 
     public static int getRandomNumber(int min, int max) {
