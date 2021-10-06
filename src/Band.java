@@ -1,7 +1,7 @@
 public class Band {
-    public String bandName;
-    public int startPrice;
-    public boolean isContract;
+    private String bandName;
+    private int startPrice;
+    private boolean isContract;
 
     public Band(String bandName, int startPrice, boolean isContract) {
         this.bandName = bandName;

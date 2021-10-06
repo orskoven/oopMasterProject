@@ -1,12 +1,12 @@
 public class Event extends BookingSystem {
-    public double bandBonus;
-    public String contactEmail;
-    public String contactName;
-    public String address;
-    public int eventTime;
-    public String eventplace;
-    public int numberOfBands;
-    public int capacity;
+    private double bandBonus;
+    private String contactEmail;
+    private String contactName;
+    private String address;
+    private int eventTime;
+    private String eventplace;
+    private int numberOfBands;
+    private int capacity;
 
     public Event(int time, int numberOfGuests, int numberOfBands, double ticketPrice, double bandBonus,
                  String contactEmail, String contactName, String address, int eventTime,
