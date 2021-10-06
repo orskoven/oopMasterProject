@@ -23,8 +23,11 @@ public class Main {
         //Create
         Simon.bandCreatorInterface();
 
+
         //Guests peter = new Guests("peterpeter","123peter");
         //ConcertAdmin lone = new ConcertAdmin("LoneR","lone123");
+
+        /*
         Band javaMusic = new Band("javaMusic", 4,100000,true);
         Event smukFest = new Event(22,10000,100,100,200,"henriette@hotmail.com","henriette","skanderborgvej 1",22,"skanderborg",10000);
         Double smukFestPris = concertAdmin.getPrice(javaMusic.getStartPrice(), smukFest.getBandBonus(smukFest.getNumberOfGuests(), smukFest.getTicketPrice()));
@@ -32,6 +35,8 @@ public class Main {
         Double bandSmukfestBonus = smukFest.getBandBonus(smukFest.getNumberOfGuests(), smukFest.getTicketPrice());
         System.out.println(bandSmukfestBonus);
         System.out.println(smukFest.getEventRevenue(smukFestPris));
+
+         */
 
     }
 
