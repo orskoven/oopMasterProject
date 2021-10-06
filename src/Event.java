@@ -34,7 +34,7 @@ public class Event extends BookingSystem {
 
     public static void chooseEvent(int[] bandId) {
         System.out.println("Choose an event for the band!\n" +
-                "press 1 for Java music rock festival, 2 for roskilde festival and 3 for smukfest");
+                "press 1 for roskilde festival, 2 for Java music rock festival and 3 for smukfest");
         Scanner scanner = new Scanner(System.in);
         String chosenEvent = scanner.nextLine();
 
