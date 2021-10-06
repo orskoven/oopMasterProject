@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -22,6 +23,12 @@ public class Main {
 
         //Create
         Simon.bandCreatorInterface();
+
+        Event event = null;
+        //event = new Event(event.chooseEvent());
+
+
+
 
 
         //Guests peter = new Guests("peterpeter","123peter");

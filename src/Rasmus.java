@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Rasmus {
-    public void chooseEvent(String playingBand, int[] bandId) {
+   /* public void chooseEvent(String playingBand, int[] bandId) {
         System.out.println("Choose an event for the band!\n" +
                 "press 1 for Java music rock festival, 2 for roskilde festival and 3 for smukfest");
         Scanner scanner = new Scanner(System.in);
@@ -17,7 +17,7 @@ public class Rasmus {
 
 
     }
-
+*/
 
     public static void main(String[] args) {
 
