@@ -11,7 +11,7 @@ public class ConcertAdmin extends User{
     }
 
     public String createEmail() {
-        return getInitials(getUserName()) + getRandomNumber(0,9) + "@event-booking";
+        return getInitials(getUserName()) + getRandomNumber(0,9) + "@book-din-event-nu.dk";
     }
 
     public int getRandomNumber(int min, int max) {

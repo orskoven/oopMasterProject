@@ -10,5 +10,9 @@ public class Main {
         System.out.println(bandSmukfestBonus);
         System.out.println(smukFest.getEventRevenue(smukFestPris));
 
+        ConcertAdmin lonef = new ConcertAdmin("lone","ads");
+        System.out.println(lonef.createEmail());
+
+
     }
 }
