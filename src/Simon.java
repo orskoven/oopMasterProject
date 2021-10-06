@@ -1,3 +1,4 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Simon {
@@ -7,7 +8,7 @@ public class Simon {
     public static void main(String[] args) {
         }
         public static boolean isContractApproved(String inputAnswerToContract) {
-        return inputAnswerToContract == "Y";
+        return inputAnswerToContract.toLowerCase(Locale.ROOT) == "Y";
 
 
         }
