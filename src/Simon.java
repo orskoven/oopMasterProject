@@ -1,4 +1,5 @@
 import java.util.Locale;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Simon {
@@ -30,6 +31,10 @@ public class Simon {
                 Band newBand = new Band(bandName, bandMembers, bandStartPrice, isContractApproved(isContractApproved));
             }
         }
+    public int getRandomNumber(int min, int max) {
+        Random random = new Random();
+        return random.nextInt(max - min) + max;
+    }
 
     }
 
