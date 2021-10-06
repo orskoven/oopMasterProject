@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Locale;
 import java.util.Random;
 import java.util.Scanner;
@@ -23,6 +24,7 @@ public class Simon {
         Scanner scanner = new Scanner(System.in);
         System.out.println("How many bands do you need to create?");
         int numberOfBands = scanner.nextInt();
+        Band[] bandArray = new Band[numberOfBands];
         for (int i = 0; i < numberOfBands; i++) {
             System.out.println("Let's add a band!\nWhat's the band name");
             System.out.println(scanner.nextLine());
@@ -35,7 +37,9 @@ public class Simon {
             System.out.println(scanner.nextLine());
             String isContractApproved = scanner.nextLine();
             Band newBand = new Band(bandName, bandMembers, bandStartPrice, isContractApproved(isContractApproved), getRandomNumber(0, 100000));
+            bandArray[i] = newBand;
         }
+        System.out.println(Arrays.toString(bandArray));
     }
 }
 

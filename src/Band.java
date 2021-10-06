@@ -16,4 +16,15 @@ public class Band {
     public int getStartPrice(){
         return startPrice;
     }
+
+    @Override
+    public String toString() {
+        return "Band{" +
+                "bandName='" + bandName + '\'' +
+                ", members=" + members +
+                ", startPrice=" + startPrice +
+                ", isContract=" + isContract +
+                ", bandId=" + bandId +
+                '}';
+    }
 }
