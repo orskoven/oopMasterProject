@@ -1,7 +1,27 @@
-public class Rasmus {
-    public static void main(String[] args) {
-        Event roskildeFestival = new Event(20, 90000, 100, 1000, 200, "Peter@hotmail.com", "Peter", "Darupvej 23", 20, "Roskilde", 120000);
+import java.util.Scanner;
 
-        Event javaMusicRockFestival = new Event(24, 250, 2, 80, 0, "søren.JavaRock@gmail.com", "Søren", "Guldbergsgade 29N", 24, "Nørrebro", 400);
+public class Rasmus {
+    public void chooseEvent(String playingBand) {
+        System.out.println("Choose an event for the band!\n" +
+                "press 1 for Java music rock festival, 2 for roskilde festival and 3 for smukfest");
+        Scanner scanner = new Scanner(System.in);
+        String chosenEvent = scanner.nextLine();
+
+        if (chosenEvent.equals("1")) {
+            Event roskildeFestival = new Event(20, 90000, 100, 1000, "Peter@hotmail.com", "Peter", "Darupvej 23", 20, "Roskilde",100 , 120000, playingBand);
+        } else if (chosenEvent.equals("2")) {
+            Event javaMusicRockFestival = new Event(24, 250, 80, 0, "søren.JavaRock@gmail.com", "Søren", "Guldbergsgade 29N", 24, "Nørrebro", 2, 400, playingBand);
+        } else if (chosenEvent.equals("3")) {
+            Event smukFest = new Event(22, 10000, 100, 100, "henriette@hotmail.com", "Henriette", "skanderborgvej 1", 22, "skanderborg", 10, 10000, playingBand);
+        }
+
+
+    }
+
+
+    public static void main(String[] args) {
+
+
+
     }
 }

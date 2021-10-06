@@ -7,10 +7,9 @@ public class Event extends BookingSystem {
     private String eventplace;
     private int numberOfBands;
     private int capacity;
+    private String playingBand;
 
-    public Event(int time, int numberOfGuests, int numberOfBands, double ticketPrice, double bandBonus,
-                 String contactEmail, String contactName, String address, int eventTime,
-                 String eventplace, int capacity) {
+    public Event(int time, int numberOfGuests, double ticketPrice, double bandBonus, String contactEmail, String contactName, String address, int eventTime, String eventplace, int numberOfBands, int capacity, String playingBand) {
         super(time, numberOfGuests, ticketPrice);
         this.bandBonus = bandBonus;
         this.contactEmail = contactEmail;
@@ -20,7 +19,9 @@ public class Event extends BookingSystem {
         this.eventplace = eventplace;
         this.numberOfBands = numberOfBands;
         this.capacity = capacity;
+        this.playingBand = playingBand;
     }
+
     public double getVacantSeatsInPercent(int capacity, int numberOfGuests){
         return (double) numberOfGuests/capacity;
     }
