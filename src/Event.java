@@ -1,25 +1,21 @@
 public class Event extends BookingSystem {
     private double bandBonus;
     private String contactEmail;
-    private String contactName;
-    private String address;
-    private int eventTime;
-    private String eventplace;
+    private String eventLocation;
     private int numberOfBands;
     private int capacity;
     private String playingBand;
+    private int[] bandId;
 
-    public Event(int time, int numberOfGuests, double ticketPrice, double bandBonus, String contactEmail, String contactName, String address, int eventTime, String eventplace, int numberOfBands, int capacity, String playingBand) {
+    public Event(int time, int numberOfGuests, double ticketPrice, double bandBonus, String contactEmail, String eventLocation, int numberOfBands, int capacity, String playingBand, int[] bandId) {
         super(time, numberOfGuests, ticketPrice);
         this.bandBonus = bandBonus;
         this.contactEmail = contactEmail;
-        this.contactName = contactName;
-        this.address = address;
-        this.eventTime = eventTime;
-        this.eventplace = eventplace;
+        this.eventLocation = eventLocation;
         this.numberOfBands = numberOfBands;
         this.capacity = capacity;
         this.playingBand = playingBand;
+        this.bandId = bandId;
     }
 
     public double getVacantSeatsInPercent(int capacity, int numberOfGuests){
