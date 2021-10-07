@@ -32,6 +32,7 @@ public class Event extends BookingSystem {
         return getTicketPrice()*getNumberOfGuests() - eventPrice;
     }
 
+    // Rasmus
     public static void chooseEvent(int[] bandId, int numberOfBands) {
         System.out.println("Choose an event for the band!\n" +
                 "press 1 for roskilde festival, 2 for Java music rock festival and 3 for smukfest");
@@ -48,9 +49,7 @@ public class Event extends BookingSystem {
             Event smukFest = new Event(22, 10000, 100, getBandBonus(10000, 100), "henriette@hotmail.com" , "skanderborg", numberOfBands, 10000, bandId);
             System.out.println(smukFest);
         }
-
-
-
+// Sammen
     }
     public static void bandCreatorInterface() {
         Scanner scanner = new Scanner(System.in);

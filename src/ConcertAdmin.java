@@ -7,7 +7,7 @@ public class ConcertAdmin extends User{
         super( userName, password);
     }
 
-
+// Laura
     public static void createAdmin (){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to your favorite bookingSystem");
@@ -31,6 +31,7 @@ public class ConcertAdmin extends User{
         return bandStartPrice + eventPrice;
     }
 
+    // Simon
     public String createEmail() {
         return getInitials(getUserName()) + getRandomNumber(0,9) + "@book-din-event-nu.dk";
     }

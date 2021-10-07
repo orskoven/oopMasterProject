@@ -7,7 +7,7 @@ public class Main {
         //Create Admin
         ConcertAdmin.createAdmin();
 
-        //Create
+        //Create Band and link event with bands
         Event.bandCreatorInterface();
     }
 
