@@ -32,20 +32,20 @@ public class Event extends BookingSystem {
         return getTicketPrice()*getNumberOfGuests() - eventPrice;
     }
 
-    public static void chooseEvent(int[] bandId) {
+    public static void chooseEvent(int[] bandId, int numberOfBands) {
         System.out.println("Choose an event for the band!\n" +
                 "press 1 for roskilde festival, 2 for Java music rock festival and 3 for smukfest");
         Scanner scanner = new Scanner(System.in);
         String chosenEvent = scanner.nextLine();
 
         if (chosenEvent.equals("1")) {
-            Event roskildeFestival = new Event(20, 90000, 100, 1000, "Peter@hotmail.com", "Roskilde",100 , 120000, bandId);
+            Event roskildeFestival = new Event(20, 90000, 100, 1000, "Peter@hotmail.com", "Roskilde",numberOfBands , 120000, bandId);
             System.out.println(roskildeFestival);
         } else if (chosenEvent.equals("2")) {
-            Event javaMusicRockFestival = new Event(24, 250, 80, 0, "søren.JavaRock@gmail.com", "Nørrebro", 2, 400, bandId);
+            Event javaMusicRockFestival = new Event(24, 250, 80, 0, "søren.JavaRock@gmail.com", "Nørrebro", numberOfBands, 400, bandId);
             System.out.println(javaMusicRockFestival);
         } else if (chosenEvent.equals("3")) {
-            Event smukFest = new Event(22, 10000, 100, 100, "henriette@hotmail.com" , "skanderborg", 10, 10000, bandId);
+            Event smukFest = new Event(22, 10000, 100, 100, "henriette@hotmail.com" , "skanderborg", numberOfBands, 10000, bandId);
             System.out.println(smukFest);
         }
 
@@ -74,7 +74,7 @@ public class Event extends BookingSystem {
             bandNameArrays[i] = bandName;
         }
         System.out.println();
-        Event.chooseEvent((bandId));
+        Event.chooseEvent((bandId), numberOfBands);
         for (String bandNames:bandNameArrays) {
             System.out.println("Band: " + bandNames);
 
