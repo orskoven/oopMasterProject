@@ -19,19 +19,6 @@ public class Band {
 
     }
 
-    public int getStartPrice(){
-        return startPrice;
-    }
-    public static boolean isContractApproved(String inputAnswerToContract) {
-        return inputAnswerToContract.toUpperCase(Locale.ROOT).equals("Y");
-    }
-
-    public static int getRandomNumber(int min, int max) {
-        Random random = new Random();
-        return random.nextInt(max - min) + max;
-
-    }
-
 
     @Override
     public String toString() {

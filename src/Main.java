@@ -9,14 +9,6 @@ public class Main {
 
         //Create
         Event.bandCreatorInterface();
-
-        /*
-        Double bandSmukfestBonus = smukFest.getBandBonus(smukFest.getNumberOfGuests(), smukFest.getTicketPrice());
-        System.out.println(bandSmukfestBonus);
-        System.out.println(smukFest.getEventRevenue(smukFestPris));
-
-         */
-
     }
 
 }

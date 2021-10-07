@@ -80,10 +80,10 @@ public class Event extends BookingSystem {
 
         }
 
-        }
-        public int getNumberOfBands(){
+    }
+    public int getNumberOfBands(){
         return numberOfBands;
-        }
+    }
 
     public static boolean isContractApproved(int inputAnswerToContract) {
         return inputAnswerToContract == 1;

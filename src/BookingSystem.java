@@ -1,6 +1,6 @@
 public class BookingSystem {
-    private int numberOfGuests;
     private int time;
+    private int numberOfGuests;
     private double ticketPrice;
 
     public BookingSystem(int time, int numberOfGuests, double ticketPrice) {
