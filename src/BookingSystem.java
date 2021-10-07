@@ -15,10 +15,7 @@ public class BookingSystem {
     public double getTicketPrice(){
         return ticketPrice;
     }
-    public double getEventTicketPrice(Event event){
-        return event.getEventRevenue((double) numberOfGuests/event.getNumberOfBands());
 
-    }
 
     @Override
     public String toString() {
